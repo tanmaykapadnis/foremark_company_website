@@ -34,3 +34,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## FAQ
+
+**What makes Foremark different from other web agencies?**
+We don't just build websites and web apps — we engineer digital products. Every project starts with understanding your business first, then building a solution that actually solves the right problem. No templates, no shortcuts.
+
+**How much does a website or web app cost?**
+Projects start at ₹7,500 and go up based on scope and complexity. Every project is quoted individually — you only pay for what you actually need. Get in touch and we'll give you a clear number upfront.
+
+**What is the Foremark Care Plan and do I need it?**
+The Care Plan is our ₹1,199/month maintenance plan. It covers hosting, uptime monitoring, backups, SSL, and 3 change requests every month. If your website is live and important to your business — yes, you need it.
