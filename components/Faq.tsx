@@ -39,7 +39,7 @@ export default function Faq() {
             <button
               key={f.q}
               onClick={() => setOpen(open === i ? null : i)}
-              className="w-full text-left p-6 rounded-2xl border border-border bg-muted/30 hover:bg-muted/50 transition"
+              className="w-full text-left p-6 rounded-2xl card-glass hover:!bg-white/[0.04]"
             >
               <div className="flex items-center justify-between gap-4">
                 <span className="font-medium text-neutral-400">{f.q}</span>

@@ -55,13 +55,14 @@ export default function Pricing() {
           {plans.map((p) => (
             <div
               key={p.name}
-              className={`p-10 rounded-3xl border transition ${
-                p.featured ? "border-accent/40 bg-accent/5" : "border-border bg-muted/30"
+              className={`card-glass p-10 rounded-3xl transition ${
+                p.featured ? "!border-accent/40 !bg-accent/5" : ""
               }`}
             >
-              <h3 className="text-2xl font-medium mb-3">{p.name}</h3>
-              <p className="text-neutral-400 text-sm mb-6">{p.subtitle}</p>
-              <div className="flex items-baseline gap-2 mb-2">
+              <div className="card-grid-overlay" />
+              <h3 className="relative z-10 text-2xl font-medium mb-3">{p.name}</h3>
+              <p className="relative z-10 text-neutral-400 text-sm mb-6">{p.subtitle}</p>
+              <div className="relative z-10 flex items-baseline gap-2 mb-2">
                 {p.cadence === "Starting at" && (
                   <span className="text-neutral-500 text-sm">{p.cadence}</span>
                 )}
@@ -72,7 +73,7 @@ export default function Pricing() {
               </div>
               <a
                 href="#contact"
-                className={`block text-center py-3 rounded-full font-medium transition mt-6 mb-8 ${
+                className={`relative z-10 block text-center py-3 rounded-full font-medium transition mt-6 mb-8 ${
                   p.featured
                     ? "bg-accent text-black hover:brightness-110"
                     : "border border-border hover:bg-muted"
@@ -80,8 +81,8 @@ export default function Pricing() {
               >
                 Get Started
               </a>
-              <p className="text-xs uppercase tracking-widest text-neutral-500 mb-4">What&apos;s Included:</p>
-              <ul className="space-y-3">
+              <p className="relative z-10 text-xs uppercase tracking-widest text-neutral-500 mb-4">What&apos;s Included:</p>
+              <ul className="relative z-10 space-y-3">
                 {p.features.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-sm text-neutral-300">
                     <Check size={16} className="text-accent mt-0.5 shrink-0" />

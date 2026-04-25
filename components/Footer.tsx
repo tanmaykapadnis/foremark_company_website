@@ -3,9 +3,9 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="relative py-24 px-6 border-t border-border mt-12 overflow-hidden bg-black">
-      <div className="absolute inset-0 dot-grid opacity-80" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-accent/[0.05] blur-[100px] pointer-events-none" />
+    <footer id="contact" className="relative py-24 px-6 border-t border-border mt-12 overflow-hidden cta-warm-fade">
+      {/* Strong CTA glow */}
+      <div className="cta-glow" style={{ top: '35%' }} />
       <div className="relative z-10 max-w-5xl mx-auto">
         <div className="text-center mb-20">
           <div className="inline-block px-4 py-1.5 rounded-full border border-border bg-muted/40 text-xs text-neutral-300 mb-8">
@@ -19,8 +19,8 @@ export default function Footer() {
           <p className="mt-6 text-neutral-400 max-w-md mx-auto">
             We bring your vision to life with creativity and precision. Let&apos;s make it happen.
           </p>
-          <a href="mailto:hello@foremark.dev" className="mt-10 inline-flex items-center gap-2 text-accent font-medium hover:brightness-125 transition-all duration-300">
-            Book A Call →
+          <a href="mailto:hello@foremark.dev" className="lets-talk-btn mt-10 inline-flex items-center gap-2 text-white font-medium px-8 py-3.5 transition-all duration-300">
+            Book A Call <span className="lets-talk-arrow">→</span>
           </a>
         </div>
 

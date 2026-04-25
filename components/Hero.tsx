@@ -19,9 +19,10 @@ function Diamond() {
 export default function Hero() {
   return (
     <section className="relative pt-40 pb-32 overflow-hidden">
-      <div className="absolute inset-0 dot-grid opacity-80" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full bg-accent/[0.05] blur-[140px]" />
-      <div className="relative max-w-6xl mx-auto px-6 text-center">
+      {/* Strong orange radial glow behind headline */}
+      <div className="hero-glow" />
+      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -53,7 +54,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="mt-10 flex items-center justify-center gap-4"
+          className="mt-10 flex items-center justify-center gap-4 hero-cta-blur rounded-full"
         >
           <a href="#why-us" className="btn-glow inline-flex items-center gap-2 bg-accent text-black font-medium px-6 py-3 rounded-full hover:brightness-110 transition-all duration-300">
             Learn More <ArrowRight size={16} />

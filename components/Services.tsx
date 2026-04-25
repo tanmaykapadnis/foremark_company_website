@@ -26,13 +26,14 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0 }}
-            className="p-8 rounded-3xl border border-border bg-muted/30 text-center"
+            className="card-glass p-8 rounded-3xl text-center"
           >
-            <div className="w-14 h-14 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center mx-auto mb-6">
+            <div className="card-grid-overlay" />
+            <div className="relative z-10 w-14 h-14 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center mx-auto mb-6">
               <Image src="/assets/icon-gear.svg" alt="" width={20} height={20} />
             </div>
-            <h3 className="text-xl font-medium mb-3">Web & App Maintenance</h3>
-            <p className="text-neutral-400 text-sm leading-relaxed">
+            <h3 className="relative z-10 text-xl font-medium mb-3">Web & App Maintenance</h3>
+            <p className="relative z-10 text-neutral-400 text-sm leading-relaxed">
               We handle your hosting, server management, updates, and uptime — so you never have to worry about your product going down. We keep it running, fast and stable.
             </p>
           </motion.div>
@@ -43,17 +44,18 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="p-8 rounded-3xl border border-border bg-muted/30 text-center"
+            className="card-glass p-8 rounded-3xl text-center"
           >
-            <div className="w-14 h-14 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center mx-auto mb-6">
+            <div className="card-grid-overlay" />
+            <div className="relative z-10 w-14 h-14 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center mx-auto mb-6">
               <Image src="/assets/icon-server.svg" alt="" width={20} height={20} />
             </div>
-            <h3 className="text-xl font-medium mb-3">Custom Web Apps & Websites</h3>
-            <p className="text-neutral-400 text-sm leading-relaxed mb-5">
+            <h3 className="relative z-10 text-xl font-medium mb-3">Custom Web Apps & Websites</h3>
+            <p className="relative z-10 text-neutral-400 text-sm leading-relaxed mb-5">
               We build your product from the ground up — whether it&apos;s a business website, a SaaS platform, or a full web application. Designed well, engineered to scale.
             </p>
             {/* Code snippet decoration */}
-            <div className="rounded-xl bg-background border border-border p-4 text-left text-[11px] text-neutral-500 font-mono leading-relaxed">
+            <div className="relative z-10 rounded-xl bg-background border border-border p-4 text-left text-[11px] text-neutral-500 font-mono leading-relaxed">
               <div><span className="text-accent">Class</span> <span className="text-white">ChatBot</span>{"{"}</div>
               <div className="pl-3"><span className="text-neutral-600">address</span> <span className="text-accent">public</span> owner;</div>
               <div className="pl-3"><span className="text-neutral-600">int</span> <span className="text-accent">private</span> response;</div>
@@ -70,16 +72,17 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="p-8 rounded-3xl border border-border bg-muted/30 text-center"
+            className="card-glass p-8 rounded-3xl text-center"
           >
-            <div className="w-14 h-14 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center mx-auto mb-6">
+            <div className="card-grid-overlay" />
+            <div className="relative z-10 w-14 h-14 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center mx-auto mb-6">
               <Image src="/assets/icon-bolt.svg" alt="" width={20} height={20} />
             </div>
-            <h3 className="text-xl font-medium mb-3">Smart Automation</h3>
-            <p className="text-neutral-400 text-sm leading-relaxed mb-5">
+            <h3 className="relative z-10 text-xl font-medium mb-3">Smart Automation</h3>
+            <p className="relative z-10 text-neutral-400 text-sm leading-relaxed mb-5">
               We map your business processes and build intelligent automations that save time, reduce manual work, and help your team focus on what actually matters.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-2 text-[11px]">
+            <div className="relative z-10 flex flex-wrap items-center justify-center gap-2 text-[11px]">
               <span className="px-3 py-1.5 rounded-full bg-background border border-border">Trigger</span>
               <ArrowRight size={10} className="text-neutral-600" />
               <span className="px-3 py-1.5 rounded-full bg-background border border-border">Prompts</span>

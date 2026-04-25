@@ -31,9 +31,9 @@ export default function Nav() {
         </nav>
         <a
           href="#contact"
-          className="hidden md:inline-flex items-center gap-1.5 border border-border bg-muted/60 text-sm px-4 py-2 rounded-full hover:bg-muted transition"
+          className="hidden md:inline-flex items-center gap-1.5 lets-talk-btn text-sm px-4 py-2 text-neutral-200"
         >
-          Let&apos;s Talk <ArrowUpRight size={14} />
+          Let&apos;s Talk <ArrowUpRight size={14} className="lets-talk-arrow" />
         </a>
         <button
           onClick={() => setOpen(!open)}
@@ -50,7 +50,7 @@ export default function Nav() {
               {l.label}
             </a>
           ))}
-          <a href="#contact" onClick={() => setOpen(false)} className="border border-border bg-muted/60 text-sm px-4 py-2 rounded-full text-center">
+          <a href="#contact" onClick={() => setOpen(false)} className="lets-talk-btn text-sm px-4 py-2 text-center text-neutral-200">
             Let&apos;s Talk ↗
           </a>
         </div>

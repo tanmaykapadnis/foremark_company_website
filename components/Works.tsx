@@ -51,8 +51,8 @@ export default function Works() {
                 key={proj.name}
                 onMouseEnter={() => setActive(i)}
                 onClick={() => setActive(i)}
-                className={`text-left p-6 rounded-2xl border transition ${
-                  active === i ? "border-accent/40 bg-accent/5" : "border-border bg-muted/20 hover:bg-muted/40"
+                className={`text-left p-6 rounded-2xl card-glass transition ${
+                  active === i ? "!border-accent/40 !bg-accent/5" : "hover:!bg-white/[0.04]"
                 }`}
               >
                 <h3 className={`text-2xl font-medium mb-2 ${active === i ? "text-accent" : ""}`}>
@@ -109,7 +109,7 @@ export default function Works() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="rounded-3xl border border-border p-8 bg-muted/20 text-center"
+              className="card-glass rounded-3xl p-8 text-center"
             >
               <div className="text-4xl md:text-5xl font-semibold text-accent">{s.k}</div>
               <p className="text-neutral-400 text-sm mt-2">{s.v}</p>
