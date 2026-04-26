@@ -132,20 +132,34 @@ body::after {
 /* ═══════════════════════════════════════════════════════
    5. "LET'S TALK" BUTTON
    ═══════════════════════════════════════════════════════ */
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes border-spin {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
 .lets-talk-btn {
-  background: #111;
-  border: 1px solid rgba(255,255,255,0.1);
+  background: 
+    linear-gradient(#111, #111) padding-box,
+    conic-gradient(from var(--border-angle), rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 75%, #e87811 100%) border-box;
+  border: 1px solid transparent;
   border-radius: 9999px;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  animation: border-spin 3s linear infinite;
 }
 .lets-talk-btn:hover {
   background: #ff7a00;
   color: #000;
   box-shadow: 0 0 20px rgba(255,120,0,0.4), 0 0 40px rgba(255,120,0,0.15);
   transform: scale(1.05);
-  border-color: rgba(255,120,0,0.5);
 }
 .lets-talk-btn:hover .lets-talk-arrow {
   transform: translateX(4px);
